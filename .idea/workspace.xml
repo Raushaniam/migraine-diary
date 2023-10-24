@@ -8,21 +8,49 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/Button/Button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/Button/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/Button/ButtonContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/Checkbox/Checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/Checkbox/Checkbox.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/Checkbox/CheckboxContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/Input/Input.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/Input/Input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/Input/InputContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/constants/Dictionary.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/styles/variables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage/HomePage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage/HomePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage/HomePageContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignInPage/SignInPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignInPage/SignInPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignInPage/SignInPageContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignUpPage/SignUpPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignUpPage/SignUpPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignUpPage/SignUpPageContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Case/Case.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Case/Case.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Case/CaseContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Case/types/ICase.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Content/Content.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Content/Content.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Content/ContentContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Content/types/IContent.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Footer/Footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Footer/Footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Footer/FooterContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Footer/types/IFooter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Header/Header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Header/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Header/HeaderContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Header/types/IHeader.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parts/Router/RouterContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +78,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\migrain-diary\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.12.1",
+    "javascript.nodejs.core.library.typings.version": "18.18.6",
+    "last_opened_file_path": "D:/RSS/rsschool-cv/index.html",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\migrain-diary\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\migrain-diary\src\parts\Content\types" />
@@ -100,7 +131,11 @@
       <workItem from="1676976603295" duration="6979000" />
       <workItem from="1676993125628" duration="340000" />
       <workItem from="1676993535707" duration="138000" />
-      <workItem from="1677579160057" duration="3100000" />
+      <workItem from="1677579160057" duration="18686000" />
+      <workItem from="1678367299649" duration="9042000" />
+      <workItem from="1696430244280" duration="5812000" />
+      <workItem from="1698061240034" duration="11388000" />
+      <workItem from="1698157602931" duration="872000" />
     </task>
     <servers />
   </component>
