@@ -1,0 +1,24 @@
+@import "../../../constants/variables.scss";
+
+.CurrentDate {
+  @include flexible();
+  column-gap: 10px;
+
+  .LeftArrow {
+    background-image: url("../../../../assets/png/LeftArrow.png"); //Шеврон влево в круге: icon by https://icons8.com
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+  }
+
+  .RightArrow {
+    background-image: url("../../../../assets/png/RightArrow.png"); //Шеврон вправо в круге: icon by https://icons8.com
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+  }
+}
