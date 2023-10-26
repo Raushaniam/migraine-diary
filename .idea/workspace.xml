@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Footer/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Footer/Footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/CurrentDate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/CurrentDate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/constants/Dictionary.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/constants/Dictionary.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/constants/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/constants/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +104,7 @@
       <workItem from="1698061240034" duration="11388000" />
       <workItem from="1698157602931" duration="3582000" />
       <workItem from="1698240135675" duration="3236000" />
-      <workItem from="1698309537624" duration="8393000" />
+      <workItem from="1698309537624" duration="11582000" />
     </task>
     <servers />
   </component>
