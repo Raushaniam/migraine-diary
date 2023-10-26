@@ -1,0 +1,14 @@
+$Black: #000000;
+$White: #ffffff;
+$LightOrange: #bdbdbd;
+
+@mixin flexible() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fullSize() {
+  width: 100%;
+  height: 100%;
+}
