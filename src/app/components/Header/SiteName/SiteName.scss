@@ -1,0 +1,16 @@
+@import "../../../constants/variables.scss";
+
+.SiteName {
+  font-size: 20px;
+  @include flexible();
+  column-gap: 10px;
+
+  .SiteLogo {
+    background-image: url("../../../../assets/png/logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px
+  }
+}
