@@ -1,4 +1,4 @@
 export interface IHeader {
     'name': string,
-    'title': string
+    'title': string,
 }
