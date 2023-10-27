@@ -5,6 +5,7 @@ import {SiteName} from "./SiteName/SiteName";
 import {Menu} from "./Menu/Menu";
 import {CurrentDate} from "./CurrentDate/CurrentDate";
 import {Navigation} from "./Navigation/Navigation";
+import {Dictionary} from "../../constants/Dictionary";
 
 export const Header:FC<IHeader> = ({name, title}) => {
     const showDate = () => {
@@ -18,6 +19,15 @@ export const Header:FC<IHeader> = ({name, title}) => {
         <SiteName name={name}/>
         <CurrentDate date={showDate()}/>
         <Menu title={title} />
-        <Navigation />
+        <Navigation
+            language={Dictionary.LANGUAGE}
+            eng={Dictionary.ENG}
+            ru={Dictionary.RU}
+            calendar={Dictionary.CALENDAR}
+            configure={Dictionary.CONFIGURE}
+            reports={Dictionary.REPORTS}
+            notification={Dictionary.NOTIFICATION}
+            logIn={Dictionary.LOG_IN}
+            logOut={Dictionary.LOG_OUT} />
     </div>
 }

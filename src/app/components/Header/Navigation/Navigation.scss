@@ -5,7 +5,13 @@
   flex-direction: column;
   row-gap: 10px;
   width: 200px;
-  height: auto;
-  background-color: $LightBlack;
+  height: 240px;
+  background-color: #55415A;
+  position: absolute;
+  top: 12vh;
+  right: 0;
+  font-weight: 500;
+  border-bottom-left-radius: 50px;
+  box-shadow: inset 4px -4px 8px 0px #0000006e;
   display: none;
 }
