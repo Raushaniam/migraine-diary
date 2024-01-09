@@ -1,6 +1,5 @@
 import React, {FC} from "react";
 import {INavigation} from "./INavigation";
-import "./Navigation.scss";
 
 export const Navigation:FC<INavigation> = ({language,
     notification,
@@ -10,9 +9,10 @@ export const Navigation:FC<INavigation> = ({language,
     logIn,
     logOut,
     eng,
-    ru}) => {
+    ru,
+    className}) => {
 
-    return <div className="Navigation">
+    return <div className={className}>
         <div>{language}: {eng} / {ru}</div>
         <div>{calendar}</div>
         <div>{configure}</div>

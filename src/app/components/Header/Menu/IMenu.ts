@@ -1,3 +1,4 @@
 export interface IMenu {
-    'title': string
+    'title': string,
+    'onClick': () => void,
 }

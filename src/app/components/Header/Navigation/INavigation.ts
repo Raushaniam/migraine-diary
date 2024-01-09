@@ -7,5 +7,6 @@ export interface INavigation {
     'logIn': string,
     'logOut': string,
     'eng': string,
-    'ru': string
+    'ru': string,
+    className: string
 }

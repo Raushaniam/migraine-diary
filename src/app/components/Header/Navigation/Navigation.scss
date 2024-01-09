@@ -6,12 +6,21 @@
   row-gap: 10px;
   width: 200px;
   height: 240px;
-  background-color: #55415A;
+  background-color: #466351;
   position: absolute;
   top: 12vh;
   right: 0;
   font-weight: 500;
   border-bottom-left-radius: 50px;
-  box-shadow: inset 4px -4px 8px 0px #0000006e;
-  display: none;
+  box-shadow: inset 2px -2px 4px 0px rgba(0, 0, 0, 0.431372549);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
+}
+
+
+.Active {
+  visibility: visible;
+  opacity: 1;
+  transition: visible 0.5s, opacity 0.5s ease-in;
 }

@@ -9,6 +9,6 @@ export const App:FC = () => {
     return <div>
         <Header name={Dictionary.SITE_NAME} title={Dictionary.MENU} />
         <Main />
-        <Footer />
+        <Footer title={Dictionary.MOTTO}/>
     </div>
 }
