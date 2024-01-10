@@ -1,0 +1,21 @@
+@import "../../../constants/variables.scss";
+
+.Time {
+  @include flexible();
+  column-gap: 20px;
+
+  .Label {
+    font-size: 18px;
+    font-weight: 600;
+
+    .Input {
+      margin-left: 10px;
+      border: 1px solid $Black;
+      border-radius: 4px;
+      height: 36px;
+      width: 160px;
+      padding: 4px;
+      cursor: pointer;
+    }
+  }
+}

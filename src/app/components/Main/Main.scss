@@ -4,5 +4,7 @@
   width: 100%;
   height: 80vh;
   @include flexible();
+  flex-direction: column;
+  gap: 20px;
   background-color: $White;
 }
