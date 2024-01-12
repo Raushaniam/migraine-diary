@@ -19,4 +19,13 @@ export const Dictionary = {
     'LOG_IN': 'Log in',
     'LOG_OUT': 'Log out',
     'MOTTO': 'You are stronger than this pain',
+    'FACE': 'face',
+    'FOREHEAD': 'forehead',
+    'EYES': 'eyes',
+    'BACK': 'back of the head',
+    'CROWN': 'crown',
+    'TEMPLES': 'temples',
+    'LEFT_TEMPLE': 'left temple',
+    'RIGHT_TEMPLE': 'right temple',
+    'OTHER': 'other',
 }

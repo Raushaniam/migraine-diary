@@ -5,7 +5,7 @@ import "./Intensity.scss";
 
 export const Intensity:FC<IIntensity> = ({title}) => {
     return <div className="Intensity">
-        {title}
+        <div className="Title">{title}</div>
         <div className="Scale">
             <label className="Label" htmlFor="one">1
                 <input className="Input" type="radio" id="one" name="one" value="1"/>
