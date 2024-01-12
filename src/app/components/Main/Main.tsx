@@ -7,6 +7,7 @@ import {Intensity} from "./Intensity/Intensity";
 import {Localization} from "./Localization/Localization";
 import {Drug} from "./Drug/Drug";
 import {Aura} from "./Aura/Aura";
+import {Button} from "../Button/Button";
 
 export const Main: FC<IMain> = () => {
     return <div className="Main">
@@ -31,5 +32,6 @@ export const Main: FC<IMain> = () => {
             comment={Dictionary.COMMENT}
         />
         <Aura title={Dictionary.AURA} yes={Dictionary.YES} no={Dictionary.NO}/>
+        <Button title={Dictionary.SAVE}/>
     </div>
 }
