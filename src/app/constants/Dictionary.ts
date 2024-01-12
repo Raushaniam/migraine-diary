@@ -32,4 +32,5 @@ export const Dictionary = {
     'AURA': 'Aura',
     'YES': 'yes',
     'NO': 'no',
+    'EPISODES': 'Migraine episodes today',
 }

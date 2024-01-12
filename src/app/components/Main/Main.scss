@@ -4,7 +4,17 @@
   width: 100%;
   height: 80vh;
   @include flexible();
-  flex-direction: column;
-  gap: 20px;
+  justify-content: flex-start;
   background-color: $White;
+
+    .MainContainer {
+      @include flexible();
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 20px;
+      background: #bfd1ba;
+      height: 100%;
+      width: 100%;
+    }
 }

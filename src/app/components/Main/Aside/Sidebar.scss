@@ -1,0 +1,13 @@
+@import "../../../constants/variables.scss";
+
+.Sidebar{
+  @include flexible();
+  align-items: flex-start;
+  border-right: 1px solid $LightBlack;
+  width: 20%;
+  min-width: 120px;
+  height: 100%;
+  padding: 20px;
+  font-weight: 600;
+  background: #eef3ed;
+}

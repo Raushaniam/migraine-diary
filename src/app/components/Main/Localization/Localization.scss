@@ -3,6 +3,7 @@
 .Localization {
   @include flexible();
   gap: 20px;
+  flex-wrap: wrap;
 
   .Title {
     font-size: 18px;
@@ -23,6 +24,7 @@
         border-bottom: 1px solid $LightBlack;
         width: 60px;
         margin-left: 6px;
+        background: transparent;
       }
     }
   }
