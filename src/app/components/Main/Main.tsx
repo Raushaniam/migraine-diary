@@ -5,6 +5,8 @@ import {Time} from "./Time/Time";
 import {Dictionary} from "../../constants/Dictionary";
 import {Intensity} from "./Intensity/Intensity";
 import {Localization} from "./Localization/Localization";
+import {Drug} from "./Drug/Drug";
+import {Aura} from "./Aura/Aura";
 
 export const Main: FC<IMain> = () => {
     return <div className="Main">
@@ -22,5 +24,12 @@ export const Main: FC<IMain> = () => {
             rightTemple={Dictionary.RIGHT_TEMPLE}
             temples={Dictionary.TEMPLES}
         />
+        <Drug
+            title={Dictionary.DRUG}
+            name={Dictionary.Name}
+            dose={Dictionary.DOSE}
+            comment={Dictionary.COMMENT}
+        />
+        <Aura title={Dictionary.AURA} yes={Dictionary.YES} no={Dictionary.NO}/>
     </div>
 }

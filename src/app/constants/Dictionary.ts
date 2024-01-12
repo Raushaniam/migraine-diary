@@ -6,6 +6,7 @@ export const Dictionary = {
     'INTENSITY': 'Intensity',
     'LOCALIZATION': 'Localization',
     'DRUG': 'Drug',
+    'Name': 'Name',
     'DOSE': 'Dose',
     'COMMENT': 'Comment',
     'SAVE': 'Save',
@@ -28,4 +29,7 @@ export const Dictionary = {
     'LEFT_TEMPLE': 'left temple',
     'RIGHT_TEMPLE': 'right temple',
     'OTHER': 'other',
+    'AURA': 'Aura',
+    'YES': 'yes',
+    'NO': 'no',
 }

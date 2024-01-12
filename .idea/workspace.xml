@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Intensity/Intensity.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Intensity/Intensity.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Intensity/Intensity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Intensity/Intensity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/ILocalization.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/ILocalization.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/IDrug.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Drug/IDrug.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/constants/Dictionary.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/constants/Dictionary.ts" afterDir="false" />
     </list>
@@ -109,7 +107,7 @@
       <workItem from="1698664916544" duration="96000" />
       <workItem from="1703836990958" duration="3649000" />
       <workItem from="1704799366121" duration="649000" />
-      <workItem from="1704801772819" duration="19377000" />
+      <workItem from="1704801772819" duration="23280000" />
     </task>
     <servers />
   </component>

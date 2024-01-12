@@ -1,0 +1,29 @@
+@import "../../../constants/variables.scss";
+
+.Drug {
+  @include flexible();
+  gap: 20px;
+
+  .Title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .DrugContainer {
+    @include flexible();
+    gap: 10px;
+
+    .Name, .Dose, .Comment {
+      border: 1px solid $LightBlack;
+      border-radius: 6px;
+      padding: 4px;
+
+      .Input {
+        border: none;
+        border-bottom: 1px solid $LightBlack;
+        width: 60px;
+        margin-left: 6px;
+      }
+    }
+  }
+}
