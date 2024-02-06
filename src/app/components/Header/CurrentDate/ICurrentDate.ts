@@ -1,3 +1,3 @@
 export interface ICurrentDate {
-    date: string
+    date: string,
 }

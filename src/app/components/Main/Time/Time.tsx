@@ -7,21 +7,18 @@ export const Time: FC<ITime> = ({start, end}) => {
         <label className="Label" htmlFor="start-time">{start}:
             <input
                 className="Input"
-                type="datetime-local"
+                type="time"
                 id="start-time"
                 name="start-time"
-                value=""
-                autoComplete="on"
+                required
             />
         </label>
         <label className="Label" htmlFor="end-time">{end}:
             <input
                 className="Input"
-                type="datetime-local"
+                type="time"
                 id="end-time"
                 name="end-time"
-                value=""
-                autoComplete="on"
             />
         </label>
     </div>;

@@ -1,4 +1,4 @@
-import React, {FC, useState} from "react";
+import React, {FC, ReactNode, useState} from "react";
 import {IHeader} from "./IHeader";
 import "./Header.scss";
 import {SiteName} from "./SiteName/SiteName";
@@ -8,17 +8,26 @@ import {Navigation} from "./Navigation/Navigation";
 import {Dictionary} from "../../constants/Dictionary";
 import './Navigation/Navigation.scss';
 import './Menu/Menu.scss';
-
+import {Calendar} from "../Calendar/Calendar";
+import {IMonths} from "../../types/IMonths";
 
 export const Header:FC<IHeader> = ({name, title}) => {
-
     const [isOnClick, setIsOnClick] = useState('false');
+    const date = new Date();
+    const monthNumber = date.getMonth();
+
+    const days:number[] = [];
+    for (let i = 1; i <= 42; i++) {
+        days.push(i);
+    }
+
+    const listOfDays:ReactNode[] = days.map((day, index) => {
+        return <div key={index.toString()} className="Day"></div>;
+    })
 
     const showDate = () => {
-        const date = new Date();
         const options: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', year: 'numeric' };
-        const currentDate = date.toLocaleDateString(['en-US', "en-GB"], options);
-        return currentDate;
+        return date.toLocaleDateString(['en-US', "en-GB"], options);
     }
 
     const showMenu = () => {
@@ -31,7 +40,8 @@ export const Header:FC<IHeader> = ({name, title}) => {
 
     return <div className={isOnClick === 'true' ? "Header ActiveMenu" : "Header"}>
         <SiteName name={name}/>
-        <CurrentDate date={showDate()}/>
+        <CurrentDate date={showDate()} />
+        <Calendar month={IMonths[monthNumber]} daysList={listOfDays}/>
         <Menu
             title={title}
             onClick={() => showMenu()}
