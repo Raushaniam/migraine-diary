@@ -1,4 +1,4 @@
-import React, {FC, ReactNode, useState} from "react";
+import React, {FC, useCallback, useState} from "react";
 import {IHeader} from "./IHeader";
 import "./Header.scss";
 import {SiteName} from "./SiteName/SiteName";
@@ -9,42 +9,25 @@ import {Dictionary} from "../../constants/Dictionary";
 import './Navigation/Navigation.scss';
 import './Menu/Menu.scss';
 import {Calendar} from "../Calendar/Calendar";
-import {IMonths} from "../../types/IMonths";
 
-export const Header:FC<IHeader> = ({name, title}) => {
+export const Header: FC<IHeader> = ({name, title}) => {
     const [isOnClick, setIsOnClick] = useState('false');
-    const date = new Date();
-    const monthNumber = date.getMonth();
 
-    const days:number[] = [];
-    for (let i = 1; i <= 42; i++) {
-        days.push(i);
-    }
-
-    const listOfDays:ReactNode[] = days.map((day, index) => {
-        return <div key={index.toString()} className="Day"></div>;
-    })
-
-    const showDate = () => {
-        const options: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', year: 'numeric' };
-        return date.toLocaleDateString(['en-US', "en-GB"], options);
-    }
-
-    const showMenu = () => {
-        if(isOnClick === 'false') {
+    const showMenu = useCallback(() => {
+        if (isOnClick === 'false') {
             setIsOnClick('true')
         } else {
             setIsOnClick('false')
         }
-    }
+    }, [isOnClick])
 
     return <div className={isOnClick === 'true' ? "Header ActiveMenu" : "Header"}>
         <SiteName name={name}/>
-        <CurrentDate date={showDate()} />
-        <Calendar month={IMonths[monthNumber]} daysList={listOfDays}/>
+        <CurrentDate/>
+        <Calendar/>
         <Menu
             title={title}
-            onClick={() => showMenu()}
+            onClick={showMenu}
         />
         <Navigation
             className={isOnClick === 'true' ? "Navigation Active" : "Navigation"}
