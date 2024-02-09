@@ -1,4 +1,4 @@
-export enum IAbbreviatedNameOfTheDay {
+export enum EAbbreviatedNameOfTheDay {
     Mo = '1',
     Tu = '2',
     We = '3',

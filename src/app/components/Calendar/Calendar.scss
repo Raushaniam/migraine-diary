@@ -10,7 +10,7 @@
   width: 296px;
   min-height: 240px;
   max-height: 350px;
-  background:$White;
+  background: $White;
   color: $Black;
   border: 2px solid $Black;
   border-radius: 10px;
@@ -21,12 +21,22 @@
 
   .MonthContainer {
     @include flexible();
-    gap: 80px;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    padding: 0 10px;
 
-    .Month {
-      font-size: 18px;
+    .MonthYear {
+      @include flexible();
+      flex-wrap: nowrap;
+      font-size: 16px;
       font-weight: 600;
       padding: 10px 0;
+      cursor: pointer;
+    }
+
+    .Arrow {
+      cursor: pointer;
     }
   }
 
@@ -60,9 +70,8 @@
       }
     }
 
-    .DayOfTheWeek {
-      font-weight: 600;
-      background: #85AF52;
+    .Pointer {
+      cursor: pointer;
     }
   }
 }

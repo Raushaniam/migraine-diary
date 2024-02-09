@@ -8,12 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/ICalendar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/ICalendar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/CurrentDate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/CurrentDate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/ICurrentDate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/ICurrentDate.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Aura/Aura.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Aura/Aura.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/types/IDaysOFTheMonth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/types/IDaysOFTheMonth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/logic/formMonthModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/logic/formMonthModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/types/IAbbreviatedNameOfTheDay.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/types/EAbbreviatedNameOfTheDay.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/types/IMonths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/types/EMonths.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Sass File" />
-        <option value="SCSS File" />
         <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -73,11 +70,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\migraine-diary\src\app\components\Calendar\AllMonths" />
+      <recent name="D:\migraine-diary\src\app\components\Calendar\DayOfTheWeek" />
       <recent name="D:\migraine-diary\src\app\components\Header" />
       <recent name="D:\migraine-diary\src" />
       <recent name="D:\migrain-diary\src\parts\Content\types" />
-      <recent name="D:\migrain-diary\src\parts\Footer\types" />
-      <recent name="D:\migrain-diary\src\parts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -118,7 +115,7 @@
       <workItem from="1703836990958" duration="3649000" />
       <workItem from="1704799366121" duration="649000" />
       <workItem from="1704801772819" duration="42760000" />
-      <workItem from="1707122336045" duration="55052000" />
+      <workItem from="1707122336045" duration="78246000" />
     </task>
     <servers />
   </component>
