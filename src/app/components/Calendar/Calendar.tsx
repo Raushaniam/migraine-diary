@@ -48,6 +48,11 @@ export const Calendar: FC<ICalendar> = () => {
         }
     }, [mode])
 
+    const changeMonth = useCallback((index: number) => {
+        setMonth(formMonthModel(index));
+        setCurrentMonth(index);
+        setMode(ECalendarMode.Days);
+    }, [])
 
     return <div className="Calendar">
         <div className="MonthContainer">
@@ -80,7 +85,7 @@ export const Calendar: FC<ICalendar> = () => {
             </div>
         }
         {
-            mode === ECalendarMode.Months && <AllMonths/>
+            mode === ECalendarMode.Months && <AllMonths onChange={changeMonth}/>
         }
         {
             mode === ECalendarMode.Years && <Years/>

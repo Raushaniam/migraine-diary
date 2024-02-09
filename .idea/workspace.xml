@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/AllMonths.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/AllMonths.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/IAllMonths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/IAllMonths.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/logic/formMonthModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/logic/formMonthModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/types/IAbbreviatedNameOfTheDay.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/types/EAbbreviatedNameOfTheDay.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/types/IMonths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/types/EMonths.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,7 @@
       <workItem from="1703836990958" duration="3649000" />
       <workItem from="1704799366121" duration="649000" />
       <workItem from="1704801772819" duration="42760000" />
-      <workItem from="1707122336045" duration="78246000" />
+      <workItem from="1707122336045" duration="87267000" />
     </task>
     <servers />
   </component>
