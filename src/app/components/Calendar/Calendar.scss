@@ -8,8 +8,7 @@
   top: 25%;
   left: 45%;
   width: 296px;
-  min-height: 240px;
-  max-height: 350px;
+  height: 286px;
   background: $White;
   color: $Black;
   border: 2px solid $Black;
@@ -27,6 +26,7 @@
     padding: 0 10px;
 
     .MonthYear {
+      width: 50%;
       @include flexible();
       flex-wrap: nowrap;
       font-size: 16px;
@@ -42,36 +42,13 @@
 
   .MonthTable {
     display: grid;
-    grid-template-columns: repeat(7, 42px);
+    grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: 1fr;
-    height: 100%;
+    height: 240px;
+    width: 100%;
     border-top: 1.5px solid $Black;
     font-size: 14px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
-
-    .Day {
-      min-height: 40px;
-      border-right: 0.2px solid #00000061;
-      border-bottom: 0.2px solid #00000017;
-      @include flexible();
-
-      &:nth-last-child(7) {
-        border-bottom-left-radius: 10px;
-      }
-
-      &:nth-last-child(-n + 7) {
-        border-bottom: 0px;
-      }
-
-      &:nth-last-child(1) {
-        border-bottom-right-radius: 10px;
-      }
-    }
-
-    .Pointer {
-      cursor: pointer;
-    }
   }
 }

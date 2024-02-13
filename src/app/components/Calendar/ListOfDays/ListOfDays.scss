@@ -1,0 +1,27 @@
+@import "../../../constants/variables.scss";
+
+.Day {
+  border-right: 0.2px solid #00000061;
+  border-bottom: 0.2px solid #00000017;
+  @include flexible();
+
+  &:nth-last-child(7) {
+    border-bottom-left-radius: 10px;
+  }
+
+  &:nth-last-child(-n + 7) {
+    border-bottom: 0px;
+  }
+
+  &:nth-last-child(1) {
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.Pointer {
+  cursor: pointer;
+}
+
+.CurrentDay {
+  border: 4px solid #85AF52
+}

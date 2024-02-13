@@ -11,12 +11,14 @@ import {EMonths} from "../../types/EMonths";
 import {ECalendarMode} from "../../types/ECalendarMode";
 import {AllMonths} from "./AllMonths/AllMonths";
 import {Years} from "./Years/Years";
+import {getCurrentDay} from "../../logic/getCurrentDay";
 
 export const Calendar: FC<ICalendar> = () => {
     const [month, setMonth] = useState<IDay[][]>([[]]);
     const [currentMonth, setCurrentMonth] = useState<number>(getCurrentMonth);
     const [currentYear, setCurrentYear] = useState<number>(getCurrentYear);
     const [mode, setMode] = useState<ECalendarMode>(ECalendarMode.Days);
+    const [currentDay, setCurrentDay] = useState<number>(getCurrentDay);
 
     useEffect(() => {
         setMonth(formMonthModel(currentMonth, currentYear));
@@ -69,11 +71,15 @@ export const Calendar: FC<ICalendar> = () => {
                     fill="black"/>
             </svg>
             {
-                (mode === ECalendarMode.Days || mode === ECalendarMode.Years)
-                    ?
-                    <div onClick={showAllMonths} className="MonthYear">{EMonths[currentMonth]} {currentYear}</div>
-                    :
-                    <div onClick={showAllMonths} className="MonthYear">{currentYear}</div>
+                mode === ECalendarMode.Days &&
+                <div onClick={showAllMonths} className="MonthYear">{EMonths[currentMonth]} {currentYear}</div>
+            }
+            {
+                mode === ECalendarMode.Months && <div onClick={showAllMonths} className="MonthYear">{currentYear}</div>
+            }
+            {
+                mode === ECalendarMode.Years &&
+                <div onClick={showAllMonths} className="Period">{currentYear - 6} - {currentYear + 5}</div>
             }
             <svg onClick={showNextMonth} className="Arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                  viewBox="0 0 24 24"
@@ -87,7 +93,7 @@ export const Calendar: FC<ICalendar> = () => {
             mode === ECalendarMode.Days &&
             <div className="MonthTable">
                 <DaysOfTheWeek/>
-                <ListOfDays month={month}/>
+                <ListOfDays month={month} currentDay={currentDay}/>
             </div>
         }
         {

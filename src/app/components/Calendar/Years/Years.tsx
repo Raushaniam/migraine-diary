@@ -8,7 +8,7 @@ export const Years: FC<IYears> = ({onChange, currentYear}) => {
         onChange(year);
     }
 
-    for (let i = currentYear - 4; i <= currentYear + 4; i++) {
+    for (let i = currentYear - 6; i <= currentYear + 5; i++) {
         years.push(i);
     }
 
