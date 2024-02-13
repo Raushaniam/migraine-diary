@@ -1,3 +1,25 @@
+@import "../../../constants/variables.scss";
+
 .Years {
-  
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 6px;
+  row-gap: 16px;
+  padding: 14px 10px;
+  border-top: 1px solid black;
+
+  .Year {
+    border: 2.5px solid #85AF52;
+    border-radius: 10px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .CurrentYear {
+    background-color: #85af52d4;
+    border-color: #00000052;
+  }
 }

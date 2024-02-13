@@ -1,9 +1,6 @@
-const date = new Date();
-const currentYear: number = date.getFullYear();
-const numberOfDaysInFebruary: number = new Date(currentYear, 2, 0).getDate();
 export const IDaysOFTheMonth = {
     January: 31,
-    February: numberOfDaysInFebruary,
+    February: 29,
     March: 31,
     April: 30,
     May: 31,

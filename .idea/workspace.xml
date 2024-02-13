@@ -6,9 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/AllMonth.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/AllMonth.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/AllMonths.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/AllMonths.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/IAllMonths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/IAllMonths.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/ListOfDays/ListOfDays.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/ListOfDays/ListOfDays.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Years/IYears.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Years/IYears.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Years/Years.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Years/Years.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Years/Years.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Years/Years.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/logic/formMonthModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/logic/formMonthModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/types/IDaysOFTheMonth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/types/IDaysOFTheMonth.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,27 +52,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "18.12.1",
-    "javascript.nodejs.core.library.typings.version": "18.18.6",
-    "last_opened_file_path": "D:/migraine-diary",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "ts.external.directory.path": "D:\\migraine-diary\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.18.6&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/migraine-diary&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\migraine-diary\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\migraine-diary\src\app\components\Calendar\AllMonths" />
@@ -113,7 +120,8 @@
       <workItem from="1703836990958" duration="3649000" />
       <workItem from="1704799366121" duration="649000" />
       <workItem from="1704801772819" duration="42760000" />
-      <workItem from="1707122336045" duration="87267000" />
+      <workItem from="1707122336045" duration="97083000" />
+      <workItem from="1707748832949" duration="1520000" />
     </task>
     <servers />
   </component>

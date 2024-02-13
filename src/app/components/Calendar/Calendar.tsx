@@ -19,7 +19,7 @@ export const Calendar: FC<ICalendar> = () => {
     const [mode, setMode] = useState<ECalendarMode>(ECalendarMode.Days);
 
     useEffect(() => {
-        setMonth(formMonthModel(currentMonth));
+        setMonth(formMonthModel(currentMonth, currentYear));
     }, [currentMonth])
 
     const showPreviousMonth = useCallback(() => {
@@ -49,8 +49,14 @@ export const Calendar: FC<ICalendar> = () => {
     }, [mode])
 
     const changeMonth = useCallback((index: number) => {
-        setMonth(formMonthModel(index));
+        setMonth(formMonthModel(index, currentYear));
         setCurrentMonth(index);
+        setMode(ECalendarMode.Days);
+    }, [])
+
+    const changeYear = useCallback((year: number) => {
+        setMonth(formMonthModel(currentMonth, year));
+        setCurrentYear(year);
         setMode(ECalendarMode.Days);
     }, [])
 
@@ -63,7 +69,7 @@ export const Calendar: FC<ICalendar> = () => {
                     fill="black"/>
             </svg>
             {
-                (mode === ECalendarMode.Days || mode === ECalendarMode.Years && <Years/>)
+                (mode === ECalendarMode.Days || mode === ECalendarMode.Years)
                     ?
                     <div onClick={showAllMonths} className="MonthYear">{EMonths[currentMonth]} {currentYear}</div>
                     :
@@ -85,10 +91,10 @@ export const Calendar: FC<ICalendar> = () => {
             </div>
         }
         {
-            mode === ECalendarMode.Months && <AllMonths onChange={changeMonth}/>
+            mode === ECalendarMode.Months && <AllMonths onChange={changeMonth} currentMonth={currentMonth}/>
         }
         {
-            mode === ECalendarMode.Years && <Years/>
+            mode === ECalendarMode.Years && <Years onChange={changeYear} currentYear={currentYear}/>
         }
     </div>
 }
