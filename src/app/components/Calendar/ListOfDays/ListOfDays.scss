@@ -1,27 +1,39 @@
 @import "../../../constants/variables.scss";
 
-.Day {
-  border-right: 0.2px solid #00000061;
-  border-bottom: 0.2px solid #00000017;
-  @include flexible();
+.ListOfDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 1fr;
+  width: 100%;
+  height: 100%;
+  border-top: 1.5px solid $Black;
+  font-size: 14px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
-  &:nth-last-child(7) {
-    border-bottom-left-radius: 10px;
+  .Day {
+    border-right: 0.2px solid #00000061;
+    border-bottom: 0.2px solid #00000017;
+    @include flexible();
+
+    &:nth-last-child(7) {
+      border-bottom-left-radius: 10px;
+    }
+
+    &:nth-last-child(-n + 7) {
+      border-bottom: 0px;
+    }
+
+    &:nth-last-child(1) {
+      border-bottom-right-radius: 10px;
+    }
   }
 
-  &:nth-last-child(-n + 7) {
-    border-bottom: 0px;
+  .Pointer {
+    cursor: pointer;
   }
 
-  &:nth-last-child(1) {
-    border-bottom-right-radius: 10px;
+  .CurrentDay {
+    border: 4px solid #85AF52
   }
-}
-
-.Pointer {
-  cursor: pointer;
-}
-
-.CurrentDay {
-  border: 4px solid #85AF52
 }

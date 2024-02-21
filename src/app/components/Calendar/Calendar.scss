@@ -41,9 +41,8 @@
   }
 
   .MonthTable {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: 1fr;
+    display: flex;
+    flex-direction: column;
     height: 240px;
     width: 100%;
     border-top: 1.5px solid $Black;

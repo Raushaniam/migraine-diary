@@ -15,5 +15,5 @@ export const ListOfDays: FC<IListOfDays> = ({month, currentDay}) => {
             </div>;
         })
     })
-    return listOfDays;
+    return <div className="ListOfDays">{listOfDays}</div>;
 }

@@ -1,6 +1,21 @@
-.DayOfTheWeek {
-  font-weight: 600;
-  background: #85AF52;
-  cursor: default;
+@import '../../../constants/variables.scss';
+
+.Week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 1fr;
   height: 40px;
+  width: 100%;
+  border-top: 1.5px solid $Black;
+  font-size: 14px;
+
+  .DayOfTheWeek {
+    @include flexible();
+    font-weight: 600;
+    background: #85AF52;
+    cursor: default;
+    border-right: 0.2px solid #00000061;
+    border-bottom: 0.2px solid #00000017;
+  }
 }
+

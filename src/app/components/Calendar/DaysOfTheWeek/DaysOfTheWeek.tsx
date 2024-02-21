@@ -10,5 +10,5 @@ export const DaysOfTheWeek: FC<IDaysOfTheWeek> = () => {
         return <div key={EAbbreviatedNameOfTheDay[day]} className="DayOfTheWeek Day">{day}</div>;
     })
 
-    return dayOfTheWeek;
+    return <div className="Week">{dayOfTheWeek}</div>;
 }
