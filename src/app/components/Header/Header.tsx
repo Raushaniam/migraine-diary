@@ -9,32 +9,44 @@ import {Dictionary} from "../../constants/Dictionary";
 import './Navigation/Navigation.scss';
 import './Menu/Menu.scss';
 import {Calendar} from "../Calendar/Calendar";
+import '../Calendar/Calendar.scss';
 
 export const Header: FC<IHeader> = ({name, title}) => {
-    const [isOnClick, setIsOnClick] = useState('false');
+    const [isOnClickMenu, setIsOnClickMenu] = useState('false');
+    const [isOnClickCalendar, setIsOnClickCalendar] = useState('false');
 
     const showMenu = useCallback(() => {
-        if (isOnClick === 'false') {
-            setIsOnClick('true')
+        if (isOnClickMenu === 'false') {
+            setIsOnClickMenu('true')
         } else {
-            setIsOnClick('false')
+            setIsOnClickMenu('false')
         }
-    }, [isOnClick])
+    }, [isOnClickMenu])
 
-    return <div className={isOnClick === 'true' ? "Header ActiveMenu" : "Header"}>
+    const showCalendar = useCallback(() => {
+        if (isOnClickCalendar === 'false') {
+            setIsOnClickCalendar('true')
+        } else {
+            setIsOnClickCalendar('false')
+        }
+    }, [isOnClickCalendar])
+
+
+    return <div className={isOnClickMenu === 'true' ? "Header ActiveMenu" : "Header"}>
         <SiteName name={name}/>
-        <CurrentDate/>
-        <Calendar/>
+        <CurrentDate onClick={showCalendar}/>
+        <Calendar className={isOnClickCalendar === 'true' ? "Calendar Flex" : "Calendar None"}/>
         <Menu
             title={title}
             onClick={showMenu}
         />
         <Navigation
-            className={isOnClick === 'true' ? "Navigation Active" : "Navigation"}
+            className={isOnClickMenu === 'true' ? "Navigation Active" : "Navigation"}
             language={Dictionary.LANGUAGE}
             eng={Dictionary.ENG}
             ru={Dictionary.RU}
             calendar={Dictionary.CALENDAR}
+            onClickCalendar={showCalendar}
             configure={Dictionary.CONFIGURE}
             reports={Dictionary.REPORTS}
             notification={Dictionary.NOTIFICATION}

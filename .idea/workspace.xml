@@ -6,13 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/AllMonth.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/AllMonths/AllMonth.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/DaysOfTheWeek/DaysOfTheWeek.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/DaysOfTheWeek/DaysOfTheWeek.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/DaysOfTheWeek/DaysOfTheWeek.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/DaysOfTheWeek/DaysOfTheWeek.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/ListOfDays/ListOfDays.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/ListOfDays/ListOfDays.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/ListOfDays/ListOfDays.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/ListOfDays/ListOfDays.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Years/Years.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Years/Years.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/Calendar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Calendar/ICalendar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Calendar/ICalendar.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/CurrentDate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/CurrentDate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/CurrentDate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/CurrentDate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/ICurrentDate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/CurrentDate/ICurrentDate.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Header/Navigation/INavigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/Navigation/INavigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Header/Navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/Navigation/Navigation.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +122,8 @@
       <workItem from="1707122336045" duration="97083000" />
       <workItem from="1707748832949" duration="19991000" />
       <workItem from="1708006812659" duration="1762000" />
+      <workItem from="1708514415945" duration="4336000" />
+      <workItem from="1708950761268" duration="599000" />
     </task>
     <servers />
   </component>

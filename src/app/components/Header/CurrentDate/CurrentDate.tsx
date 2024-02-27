@@ -3,7 +3,7 @@ import {ICurrentDate} from "./ICurrentDate";
 import "./CurrentDate.scss";
 import {getFormattedCurrentDate} from "../../../logic/getFormattedCurrentDate";
 
-export const CurrentDate:FC<ICurrentDate> = () => {
+export const CurrentDate: FC<ICurrentDate> = ({onClick}) => {
 
     const [currentDate, setCurrentDate] = useState<string>('');
 
@@ -13,7 +13,7 @@ export const CurrentDate:FC<ICurrentDate> = () => {
 
     return <div className="CurrentDate">
         <div className="LeftArrow"></div>
-        <div>{currentDate}</div>
+        <div onClick={onClick}>{currentDate}</div>
         <div className="RightArrow"></div>
     </div>
 }

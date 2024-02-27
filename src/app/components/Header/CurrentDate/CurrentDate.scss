@@ -3,6 +3,7 @@
 .CurrentDate {
   @include flexible();
   column-gap: 10px;
+  cursor: pointer;
 
   .LeftArrow {
     background-image: url("../../../../assets/png/LeftArrow.png"); //Шеврон влево в круге: icon by https://icons8.com
