@@ -14,7 +14,7 @@ import {Years} from "./Years/Years";
 import {getCurrentDay} from "../../logic/getCurrentDay";
 import {getCurrentPeriod} from "../../logic/getCurrentPeriod";
 
-export const Calendar: FC<ICalendar> = ({className}) => {
+export const Calendar: FC<ICalendar> = () => {
     const [month, setMonth] = useState<IDay[][]>([[]]);
     const [currentMonth, setCurrentMonth] = useState<number>(getCurrentMonth);
     const [currentYear, setCurrentYear] = useState<number>(getCurrentYear);
@@ -82,7 +82,7 @@ export const Calendar: FC<ICalendar> = ({className}) => {
         setMode(ECalendarMode.Days);
     }, [])
 
-    return <div className={className}>
+    return <div className="Calendar">
         <div className="MonthContainer">
             <svg
                 onClick={

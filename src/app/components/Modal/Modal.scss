@@ -1,0 +1,15 @@
+.Modal {
+  position: absolute;
+  z-index: 3000;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #80808096;
+
+  .Content {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+  }
+}

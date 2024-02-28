@@ -10,38 +10,37 @@ import './Navigation/Navigation.scss';
 import './Menu/Menu.scss';
 import {Calendar} from "../Calendar/Calendar";
 import '../Calendar/Calendar.scss';
+import {Modal} from "../Modal/Modal";
 
 export const Header: FC<IHeader> = ({name, title}) => {
-    const [isOnClickMenu, setIsOnClickMenu] = useState('false');
-    const [isOnClickCalendar, setIsOnClickCalendar] = useState('false');
+    const [isShowMenu, setShowingMenu] = useState<boolean>(false);
+    const [isShowCalendar, setShowingCalendar] = useState<boolean>(false);
 
     const showMenu = useCallback(() => {
-        if (isOnClickMenu === 'false') {
-            setIsOnClickMenu('true')
-        } else {
-            setIsOnClickMenu('false')
-        }
-    }, [isOnClickMenu])
+        setShowingMenu(!isShowMenu);
+    }, [isShowMenu])
 
     const showCalendar = useCallback(() => {
-        if (isOnClickCalendar === 'false') {
-            setIsOnClickCalendar('true')
-        } else {
-            setIsOnClickCalendar('false')
+        if (!isShowCalendar) {
+            setShowingCalendar(true);
         }
-    }, [isOnClickCalendar])
+    }, [isShowCalendar])
 
+    const onChangeVisibility = useCallback((isVisible: boolean) => {
+        setShowingCalendar(isVisible);
+    }, [])
 
-    return <div className={isOnClickMenu === 'true' ? "Header ActiveMenu" : "Header"}>
+    return <div className={isShowMenu ? "Header ActiveMenu" : "Header"}>
         <SiteName name={name}/>
         <CurrentDate onClick={showCalendar}/>
-        <Calendar className={isOnClickCalendar === 'true' ? "Calendar Flex" : "Calendar None"}/>
+        <Modal onChangeVisibility={onChangeVisibility} isShow={isShowCalendar} width={296}
+               height={284}><Calendar/></Modal>
         <Menu
             title={title}
             onClick={showMenu}
         />
         <Navigation
-            className={isOnClickMenu === 'true' ? "Navigation Active" : "Navigation"}
+            className={isShowMenu ? "Navigation Active" : "Navigation"}
             language={Dictionary.LANGUAGE}
             eng={Dictionary.ENG}
             ru={Dictionary.RU}

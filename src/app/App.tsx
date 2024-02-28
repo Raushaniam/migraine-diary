@@ -5,10 +5,10 @@ import {Main} from "./components/Main/Main";
 import {Footer} from "./components/Footer/Footer";
 import "./App.scss";
 
-export const App:FC = () => {
+export const App: FC = () => {
     return <div>
-        <Header name={Dictionary.SITE_NAME} title={Dictionary.MENU} />
-        <Main />
+        <Header name={Dictionary.SITE_NAME} title={Dictionary.MENU}/>
+        <Main/>
         <Footer title={Dictionary.MOTTO}/>
     </div>
 }
