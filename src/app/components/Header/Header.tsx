@@ -21,6 +21,7 @@ export const Header: FC<IHeader> = ({name, title}) => {
     }, [isShowMenu])
 
     const showCalendar = useCallback(() => {
+        setShowingMenu(false);
         if (!isShowCalendar) {
             setShowingCalendar(true);
         }

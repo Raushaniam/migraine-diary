@@ -1,3 +1,3 @@
 export interface IIntensity {
-  title: string,
+    title: string,
 }

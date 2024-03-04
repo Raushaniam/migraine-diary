@@ -10,21 +10,26 @@
 
     .Input {
       margin-left: 10px;
-      border: 1px solid $Black;
-      border-radius: 4px;
+      border: none;
+      border-radius: 8px;
       height: 36px;
-      width: 100px;
-      padding: 4px;
+      width: 90px;
+      padding: 4px 4px 4px 8px;
       cursor: pointer;
-      background: transparent;
+      background: #ffffff;
+      box-shadow: 0px 0px 4px black;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: inherit;
+
+      &::-webkit-calendar-picker-indicator {
+        filter: brightness(0) saturate(100%) invert(67%) sepia(8%) saturate(2067%) hue-rotate(45deg) brightness(93%) contrast(100%);
+      }
+
+      &::-webkit-datetime-edit-hour-field::after {
+        content: none;
+      }
     }
 
-    .Input::after {
-
-    }
-
-    .Input.suffixIcon {
-
-    }
   }
 }

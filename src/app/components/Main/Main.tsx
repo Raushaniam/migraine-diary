@@ -11,6 +11,7 @@ import {Button} from "../Button/Button";
 import {Sidebar} from "./Aside/Sidebar";
 
 export const Main: FC<IMain> = () => {
+
     return <div className="Main">
         <Sidebar title={Dictionary.EPISODES}/>
         <div className="MainContainer">

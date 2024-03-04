@@ -31,14 +31,19 @@ body {
   font-family: "RobotoRegular", sans-serif;
 
   #root {
-    @include fullSize ();
+    @include fullSize();
 
     .App {
-      @include fullSize ();
+      @include fullSize();
       display: flex;
       flex-direction: column;
     }
   }
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 
