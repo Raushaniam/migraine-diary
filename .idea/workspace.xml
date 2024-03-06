@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/icon_arrow_intensity.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/intensity.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/intensityLightRed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/intensityRed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Main/Intensity/Scale/Scale.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Intensity/IIntensity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Intensity/IIntensity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Main/Intensity/Intensity.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Intensity/Intensity.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Main/Intensity/Intensity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Intensity/Intensity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Time/Time.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Time/Time.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/types/TIntensity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/types/TIntensity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Intensity/ScaleElement/IScaleElement.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Intensity/Scale/IScale.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Intensity/ScaleElement/ScaleElement.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Intensity/ScaleElement/ScaleElement.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Intensity/Scale/Scale.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Sass File" />
-        <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="SCSS File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -127,7 +123,8 @@
       <workItem from="1708006812659" duration="1762000" />
       <workItem from="1708514415945" duration="4336000" />
       <workItem from="1708950761268" duration="599000" />
-      <workItem from="1709037369402" duration="54104000" />
+      <workItem from="1709037369402" duration="57155000" />
+      <workItem from="1709551378863" duration="26297000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,8 @@
 import React, {FC, useState} from "react";
-import {IScaleElement} from "./IScaleElement";
-import './ScaleElement.scss';
+import {IScale} from "./IScale";
+import './Scale.scss';
 
-export const ScaleElement: FC<IScaleElement> = () => {
+export const Scale: FC<IScale> = () => {
     const array: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const [intensity, setIntensity] = useState<number>(0);
 
@@ -19,5 +19,5 @@ export const ScaleElement: FC<IScaleElement> = () => {
         </div>
     })
 
-    return scaleElement;
+    return <div className="Scale">{scaleElement}</div>;
 }

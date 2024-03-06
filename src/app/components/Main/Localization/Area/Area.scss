@@ -1,0 +1,55 @@
+@import "../../../../constants/variables.scss";
+
+.Select {
+  @include flexible();
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px black;
+  height: 26px;
+  width: 336px;
+  padding: 4px 6px;
+
+  .Input {
+    border: none;
+    flex-grow: 1;
+    outline: none;
+  }
+
+  .Icon {
+    background-image: url("../../../../../assets/icons/down");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+  }
+}
+
+.ListOfLocalizations {
+  @include flexible();
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 4px 10px;
+  background-color: white;
+  border-radius: 2px 2px 10px 10px;
+  position: absolute;
+  margin-top: 2px;
+  width: 336px;
+  box-shadow: 0px 0px 4px black;
+  row-gap: 2px;
+
+  .Area {
+    width: 100%;
+    border-radius: 4px;
+    padding: 2px 6px;
+
+    &:hover {
+      background-color: #85AF52;
+    }
+
+    .ActiveArea {
+      background-color: #85AF52;
+    }
+  }
+}
