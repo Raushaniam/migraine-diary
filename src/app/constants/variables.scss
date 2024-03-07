@@ -1,6 +1,6 @@
 $Black: #000000;
 $White: #ffffff;
-$LightBlack: #000000C4;
+$LightBlack: rgba(0, 0, 0, 0.75);
 
 @mixin flexible() {
   display: flex;

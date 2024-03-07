@@ -1,0 +1,14 @@
+@import "../../constants/variables.scss";
+
+.Tag {
+  @include flexible;
+  background: #a9a9a959;
+  border-radius: 4px;
+  padding: 2px 4px;
+
+  .Close {
+    background-image: url("../../../assets/icons/close.png");
+    width: 16px;
+    height: 16px;
+  }
+}
