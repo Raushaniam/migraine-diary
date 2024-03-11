@@ -9,6 +9,7 @@ import {Drug} from "./Drug/Drug";
 import {Aura} from "./Aura/Aura";
 import {Button} from "../Button/Button";
 import {Sidebar} from "./Aside/Sidebar";
+import {Comment} from "./Comment/Comment";
 
 export const Main: FC<IMain> = () => {
 
@@ -33,9 +34,9 @@ export const Main: FC<IMain> = () => {
                 title={Dictionary.DRUG}
                 name={Dictionary.Name}
                 dose={Dictionary.DOSE}
-                comment={Dictionary.COMMENT}
             />
             <Aura title={Dictionary.AURA} yes={Dictionary.YES} no={Dictionary.NO}/>
+            <Comment title={Dictionary.COMMENT}/>
             <Button title={Dictionary.SAVE}/>
         </div>
     </div>

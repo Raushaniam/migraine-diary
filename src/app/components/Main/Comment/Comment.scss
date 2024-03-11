@@ -1,0 +1,23 @@
+@import "../../../constants/variables.scss";
+
+
+.Comment {
+  font-size: 18px;
+  font-weight: 600;
+  @include flexible();
+  gap: 20px;
+
+  .Label {
+    border: 1px solid $LightBlack;
+    border-radius: 6px;
+    padding: 4px;
+
+    .Input {
+      border: none;
+      border-bottom: 1px solid $LightBlack;
+      width: 60px;
+      margin-left: 6px;
+      background: transparent;
+    }
+  }
+}

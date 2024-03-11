@@ -2,7 +2,7 @@ import React, {FC} from "react";
 import {IDrug} from "./IDrug";
 import "./Drug.scss";
 
-export const Drug: FC<IDrug> = ({title, dose, name, comment}) => {
+export const Drug: FC<IDrug> = ({title, dose, name}) => {
     return <div className="Drug">
         <div className="Title">{title}</div>
         <div className="DrugContainer">
@@ -11,9 +11,6 @@ export const Drug: FC<IDrug> = ({title, dose, name, comment}) => {
             </label>
             <label className="Dose" htmlFor="inputDose">{dose}
                 <input className="Input" id="inputDose"/>
-            </label>
-            <label className="Comment" htmlFor="drugComment">{comment}
-                <input className="Input" type="text" id="drugComment"/>
             </label>
         </div>
     </div>

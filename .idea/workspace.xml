@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/components/Select/ISelect.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Select/Select.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Select/Select.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Tag/Tag.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/search.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/Area/Area.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/Area/Area.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/Area/Area.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/Area/Area.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/Area/IArea.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/Area/IArea.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Tag/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Tag/Tag.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/constants/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/constants/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/IDrug.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Drug/IDrug.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Select/Select.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +121,7 @@
       <workItem from="1708514415945" duration="4336000" />
       <workItem from="1708950761268" duration="599000" />
       <workItem from="1709037369402" duration="57155000" />
-      <workItem from="1709551378863" duration="47217000" />
+      <workItem from="1709551378863" duration="54739000" />
     </task>
     <servers />
   </component>

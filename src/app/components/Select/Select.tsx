@@ -51,7 +51,7 @@ export const Select: FC<ISelect> = () => {
         }
     }
 
-    return <form>
+    return <form ref={areaRef}>
         <div className="Select">
             <div className="TagContainer">
                 <Tag onClickCross={(index) => removeTag(index)} tags={tags}/>
@@ -60,7 +60,7 @@ export const Select: FC<ISelect> = () => {
             <div className={show ? "Search" : "Icon"} onClick={showOptions}></div>
         </div>
         {show &&
-            <div ref={areaRef} className="ListOfOptions">
+            <div className="ListOfOptions">
                 {
                     <Area activeAreas={activeAreas}
                           onClick={addTag}/>

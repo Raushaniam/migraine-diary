@@ -13,7 +13,7 @@
     @include flexible();
     gap: 10px;
 
-    .Name, .Dose, .Comment {
+    .Name, .Dose {
       border: 1px solid $LightBlack;
       border-radius: 6px;
       padding: 4px;
