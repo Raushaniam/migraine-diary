@@ -11,19 +11,20 @@
 
   .DrugContainer {
     @include flexible();
-    gap: 10px;
+    flex-direction: column;
 
-    .Name, .Dose {
+    .DrugBox {
+      @include flexible();
+      justify-content: space-evenly;
       border: 1px solid $LightBlack;
       border-radius: 6px;
-      padding: 4px;
 
-      .Input {
-        border: none;
-        border-bottom: 1px solid $LightBlack;
-        width: 60px;
-        margin-left: 6px;
-        background: transparent;
+      .Name, .Dose {
+        padding: 4px;
+      }
+
+      .Name {
+        border-right: 1px solid $LightBlack;
       }
     }
   }

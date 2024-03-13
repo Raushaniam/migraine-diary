@@ -32,8 +32,6 @@ export const Main: FC<IMain> = () => {
             />
             <Drug
                 title={Dictionary.DRUG}
-                name={Dictionary.Name}
-                dose={Dictionary.DOSE}
             />
             <Aura title={Dictionary.AURA} yes={Dictionary.YES} no={Dictionary.NO}/>
             <Comment title={Dictionary.COMMENT}/>

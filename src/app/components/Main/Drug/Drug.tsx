@@ -1,17 +1,17 @@
 import React, {FC} from "react";
 import {IDrug} from "./IDrug";
 import "./Drug.scss";
+import {Select} from "../../Select/Select";
+import {ESelectMode} from "../../../types/ESelectMode";
 
-export const Drug: FC<IDrug> = ({title, dose, name}) => {
+export const Drug: FC<IDrug> = ({title}) => {
     return <div className="Drug">
         <div className="Title">{title}</div>
         <div className="DrugContainer">
-            <label className="Name" htmlFor="inputName">{name}
-                <input className="Input" id="inputName"/>
-            </label>
-            <label className="Dose" htmlFor="inputDose">{dose}
-                <input className="Input" id="inputDose"/>
-            </label>
+            <div className="DrugBox">
+                <Select mode={ESelectMode.Name}/>
+                <Select mode={ESelectMode.Dose}/>
+            </div>
         </div>
     </div>
 }

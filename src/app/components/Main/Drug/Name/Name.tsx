@@ -1,10 +1,10 @@
 import React, {FC, ReactNode} from "react";
-import {IArea} from "./IArea";
-import {EAreas} from "../../../../types/EAreas";
-import './Area.scss';
+import {IName} from "./IName";
+import './Name.scss';
+import {EDrugNames} from "../../../../types/EDrugNames";
 
-export const Area: FC<IArea> = ({onClick, activeAreas}) => {
-    const areas: string[] = Object.values(EAreas);
+export const Name: FC<IName> = ({onClick, activeAreas}) => {
+    const areas: string[] = Object.values(EDrugNames);
 
     const areaElements: ReactNode[] = areas.map((area, index) => {
         return activeAreas.includes(area) ?
