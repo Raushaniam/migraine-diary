@@ -60,13 +60,13 @@ export const Select: FC<ISelect> = ({mode}) => {
 
     return <form ref={areaRef}>
         <div className="Select">
-            <div className="TagContainer">
+            <span className="TagContainer">
                 <Tag onClickCross={removeTag} tags={tags}/>
                 <input className="Input"
                        type="text"
                        onKeyDown={dataInput}
                 />
-            </div>
+            </span>
             <div className={show ? "Search" : "Icon"} onClick={showOptions}></div>
         </div>
         {show &&

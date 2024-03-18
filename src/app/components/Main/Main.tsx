@@ -5,7 +5,7 @@ import {Time} from "./Time/Time";
 import {Dictionary} from "../../constants/Dictionary";
 import {Intensity} from "./Intensity/Intensity";
 import {Localization} from "./Localization/Localization";
-import {Drug} from "./Drug/Drug";
+import {Medicine} from "./Medicine/Medicine";
 import {Aura} from "./Aura/Aura";
 import {Button} from "../Button/Button";
 import {Sidebar} from "./Aside/Sidebar";
@@ -30,8 +30,8 @@ export const Main: FC<IMain> = () => {
                 rightTemple={Dictionary.RIGHT_TEMPLE}
                 temples={Dictionary.TEMPLES}
             />
-            <Drug
-                title={Dictionary.DRUG}
+            <Medicine
+                title={Dictionary.MEDICINE}
             />
             <Aura title={Dictionary.AURA} yes={Dictionary.YES} no={Dictionary.NO}/>
             <Comment title={Dictionary.COMMENT}/>

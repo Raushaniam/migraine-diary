@@ -5,7 +5,7 @@ export const Dictionary = {
     'END': 'End',
     'INTENSITY': 'Intensity',
     'LOCALIZATION': 'Localization',
-    'DRUG': 'Drug',
+    'MEDICINE': 'Medicine',
     'Name': 'Name',
     'DOSE': 'Dose',
     'COMMENT': 'Comment',
