@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/IMedicine.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/Drug.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/IDrug.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/Name/IName.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/Name/Name.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Drug/Name/Name.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Select/Select.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Tag/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Tag/Tag.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/constants/Dictionary.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/constants/Dictionary.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Medicine/MedicineBox/IMedicineBox.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/MedicineBox/IMedicineBox.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Medicine/MedicineBox/MedicineBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/MedicineBox/MedicineBox.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +123,7 @@
       <workItem from="1708950761268" duration="599000" />
       <workItem from="1709037369402" duration="57155000" />
       <workItem from="1709551378863" duration="73094000" />
-      <workItem from="1710508772522" duration="5392000" />
+      <workItem from="1710508772522" duration="13314000" />
     </task>
     <servers />
   </component>
