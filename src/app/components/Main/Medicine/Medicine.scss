@@ -16,58 +16,80 @@
     border-radius: 8px;
     background-color: $White;
 
-    .MedicineBox {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .MedicineHeading {
+      @include flexible();
       border-bottom: 1px solid $LightBlack;
-      border-radius: 0;
+      border-radius: 8px;
       width: 100%;
+      background: #85AF52;
 
-      .Name, .Dose {
-        padding: 4px;
-        width: 100%;
+      .Heading {
+        border-right: 1px solid $LightBlack;
+        width: 200px;
         height: 100%;
-        max-width: 200px;
-
-        .Select {
-          border-radius: 0;
-          box-shadow: none;
-          background-color: transparent;
-          padding: 0;
-
-          .TagContainer {
-            flex-wrap: nowrap;
-
-            .Tag {
-              justify-content: flex-start;
-
-              .Text {
-                white-space: nowrap;
-              }
-            }
-
-            .Input {
-              width: 50%;
-              background-color: transparent;
-            }
-          }
-        }
-
-        .ListOfOptions {
-          width: auto;
-          border-radius: 10px;
-        }
+        padding: 4px 6px;
       }
 
-      .Name {
-        border-right: 1px solid $LightBlack;
-        max-width: 280px;
+      .Svg {
+        @include flexible();
       }
     }
 
-    .Pluse {
-      margin-left: auto;
+    .MedicineBoxes {
+      width: 100%;
+      height: 100%;
+
+      .MedicineBox {
+        @include flexible();
+        border-radius: 0;
+        width: 100%;
+        border-bottom: 1px solid $LightBlack;
+
+        &:nth-last-child(1) {
+          border-bottom: none;
+        }
+
+        .Name, .Dose {
+          padding: 4px;
+          height: 100%;
+          width: 200px;
+          border-right: 1px solid $LightBlack;
+
+          .Select {
+            border-radius: 0;
+            box-shadow: none;
+            background-color: transparent;
+            padding: 0;
+
+            .TagContainer {
+              flex-wrap: nowrap;
+
+              .Tag {
+                justify-content: flex-start;
+                max-width: 170px;
+                flex-wrap: wrap;
+
+                .Text {
+                  white-space: normal;
+                  max-width: 154px;
+                  overflow-wrap: break-word;
+                }
+              }
+
+              .Input {
+                width: 50%;
+                background-color: transparent;
+              }
+            }
+          }
+
+          .ListOfOptions {
+            width: auto;
+            border-radius: 10px;
+          }
+        }
+
+      }
     }
   }
 }

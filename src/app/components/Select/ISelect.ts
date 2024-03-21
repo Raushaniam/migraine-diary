@@ -1,3 +1,6 @@
+import {ESelectMode} from "../../types/ESelectMode";
+
 export interface ISelect {
-    mode: string,
+    mode: ESelectMode,
+    options: string[],
 }

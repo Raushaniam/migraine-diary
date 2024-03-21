@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/constants/HeadacheAreas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/constants/MedicationDoses.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/constants/MedicineNames.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Localization/Localization.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Medicine/MedicineBox/IMedicineBox.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/MedicineBox/IMedicineBox.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Main/Medicine/MedicineBox/MedicineBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/MedicineBox/MedicineBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Select/ISelect.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Select/ISelect.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Select/Select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/types/EAreas.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/types/EDoses.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/types/EDrugNames.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/types/ESelectMode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/types/ESelectMode.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +83,11 @@
       <recent name="D:\migraine-diary\src\app\components\Main\Drug" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\migraine-diary\src\app\constants" />
       <recent name="D:\migraine-diary\src\app\components\Select" />
       <recent name="D:\migraine-diary\src\app\components\Calendar\AllMonths" />
       <recent name="D:\migraine-diary\src\app\components\Calendar\DayOfTheWeek" />
       <recent name="D:\migraine-diary\src\app\components\Header" />
-      <recent name="D:\migraine-diary\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -123,7 +135,7 @@
       <workItem from="1708950761268" duration="599000" />
       <workItem from="1709037369402" duration="57155000" />
       <workItem from="1709551378863" duration="73094000" />
-      <workItem from="1710508772522" duration="13314000" />
+      <workItem from="1710508772522" duration="37164000" />
     </task>
     <servers />
   </component>

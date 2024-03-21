@@ -1,22 +1,17 @@
-import React, {FC, useCallback, useRef, useState} from "react";
+import React, {FC, useCallback, useEffect, useRef, useState} from "react";
 import {ISelect} from "./ISelect";
 import {Tag} from "../Tag/Tag";
 import "./Select.scss";
 import {useClickOutside} from "../../hooks/useClickOutside";
 import {ESelectMode} from "../../types/ESelectMode";
 import {Option} from "./Option/Option";
-import {EAreas} from "../../types/EAreas";
-import {EDrugNames} from "../../types/EDrugNames";
-import {EDoses} from "../../types/EDoses";
 
-export const Select: FC<ISelect> = ({mode}) => {
+export const Select: FC<ISelect> = ({mode, options}) => {
     const [show, setShow] = useState<boolean>(false);
     const [tags, setTags] = useState<string[]>([]);
     const [activeOptions, setActiveOptions] = useState<string[]>([]);
+    const [isHiddenInput, setHiddenInput] = useState<boolean>(true);
     const areaRef = useRef();
-    const areas: string[] = Object.values(EAreas);
-    const names: string[] = Object.values(EDrugNames);
-    const doses: string[] = Object.values(EDoses);
 
     useClickOutside(areaRef, () => {
         setShow(false);
@@ -25,6 +20,12 @@ export const Select: FC<ISelect> = ({mode}) => {
     const showOptions = useCallback(() => {
         setShow(!show);
     }, [show])
+
+    useEffect(() => {
+        if (mode === ESelectMode.SingleInput && tags.length === 1) {
+            setHiddenInput(!isHiddenInput);
+        }
+    }, [tags])
 
     const dataInput = (event) => {
         if (event.key === 'Backspace') {
@@ -38,7 +39,7 @@ export const Select: FC<ISelect> = ({mode}) => {
         event.preventDefault();
     }
 
-    const addTag = (element, index) => {
+    const addTagToArea = (element) => {
         if (!activeOptions.includes(element) && !tags.includes(element)) {
             setActiveOptions([...activeOptions, element]);
             setTags([...tags, element]);
@@ -50,8 +51,21 @@ export const Select: FC<ISelect> = ({mode}) => {
         }
     }
 
+    const addTag = (element) => {
+        if (mode === ESelectMode.SingleInput && tags.length < 1) {
+            setActiveOptions([...activeOptions, element]);
+            setTags([...tags, element]);
+        }
+        if (mode === ESelectMode.MultipleInput) {
+            addTagToArea(element);
+        }
+    }
+
     const removeTag = (index) => {
         const poppedTag: string = tags[index];
+        if (mode === ESelectMode.SingleInput && tags.length === 1) {
+            setHiddenInput(true);
+        }
         setTags(tags.filter((tag, i) => i !== index));
         if (activeOptions.includes(poppedTag)) {
             setActiveOptions(activeOptions.filter((item) => item !== poppedTag));
@@ -62,10 +76,10 @@ export const Select: FC<ISelect> = ({mode}) => {
         <div className="Select">
             <span className="TagContainer">
                 <Tag onClickCross={removeTag} tags={tags}/>
-                <input className="Input"
-                       type="text"
-                       onKeyDown={dataInput}
-                />
+                {isHiddenInput && <input className="Input"
+                                         type="text"
+                                         onKeyDown={dataInput}
+                />}
             </span>
             <div className={show ? "Search" : "Icon"} onClick={showOptions}></div>
         </div>
@@ -74,9 +88,7 @@ export const Select: FC<ISelect> = ({mode}) => {
                 <Option activeOptions={activeOptions}
                         onClick={addTag}
                         options={
-                            mode === ESelectMode.Area && areas ||
-                            mode === ESelectMode.Name && names ||
-                            mode === ESelectMode.Dose && doses
+                            options
                         }/>
             </div>
         }
