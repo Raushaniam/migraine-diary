@@ -68,8 +68,10 @@
                 justify-content: flex-start;
                 max-width: 170px;
                 flex-wrap: wrap;
+                min-height: 34px;
 
                 .Text {
+                  display: block;
                   white-space: normal;
                   max-width: 154px;
                   overflow-wrap: break-word;
@@ -77,7 +79,6 @@
               }
 
               .Input {
-                width: 50%;
                 background-color: transparent;
               }
             }

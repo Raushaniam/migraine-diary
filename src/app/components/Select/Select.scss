@@ -17,13 +17,14 @@
     justify-content: flex-start;
     gap: 6px;
     width: 96%;
-    height: auto;
+    height: 100%;
     flex-wrap: wrap;
 
     .Input {
       border: none;
       flex-grow: 1;
       outline: none;
+      min-height: 34px;
     }
   }
 

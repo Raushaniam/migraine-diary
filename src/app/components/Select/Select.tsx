@@ -10,7 +10,7 @@ export const Select: FC<ISelect> = ({mode, options}) => {
     const [show, setShow] = useState<boolean>(false);
     const [tags, setTags] = useState<string[]>([]);
     const [activeOptions, setActiveOptions] = useState<string[]>([]);
-    const [isHiddenInput, setHiddenInput] = useState<boolean>(true);
+    const [isShowInput, setShowInput] = useState<boolean>(true);
     const areaRef = useRef();
 
     useClickOutside(areaRef, () => {
@@ -22,10 +22,12 @@ export const Select: FC<ISelect> = ({mode, options}) => {
     }, [show])
 
     useEffect(() => {
-        if (mode === ESelectMode.SingleInput && tags.length === 1) {
-            setHiddenInput(!isHiddenInput);
+        if (mode === ESelectMode.SingleInput && tags.length >= 1) {
+            setShowInput(false);
+        } else {
+            setShowInput(true);
         }
-    }, [tags])
+    }, [tags, mode])
 
     const dataInput = (event) => {
         if (event.key === 'Backspace') {
@@ -34,62 +36,60 @@ export const Select: FC<ISelect> = ({mode, options}) => {
         if (event.key !== 'Enter') return;
         const value = event.target.value;
         if (!value.trim()) return;
-        setTags([...tags, value.trim()]);
+        setTimeout(() => {
+            setTags([...tags, value.trim()]);
+        }, 0)
         event.target.value = '';
         event.preventDefault();
     }
 
-    const addTagToArea = (element) => {
-        if (!activeOptions.includes(element) && !tags.includes(element)) {
-            setActiveOptions([...activeOptions, element]);
-            setTags([...tags, element]);
-        } else {
-            setActiveOptions(activeOptions.filter((item) => item !== element));
-            if (tags.includes(element)) {
-                setTags(tags.filter((tag) => tag !== element))
-            }
-        }
+    const addOption = (element) => {
+        setActiveOptions([...activeOptions, element]);
+        setTags([...tags, element]);
     }
 
-    const addTag = (element) => {
-        if (mode === ESelectMode.SingleInput && tags.length < 1) {
-            setActiveOptions([...activeOptions, element]);
-            setTags([...tags, element]);
+    const removeOption = (element) => {
+        setActiveOptions(activeOptions.filter((item) => item !== element));
+        setTags(tags.filter((tag) => tag !== element))
+    }
+
+    const addRemoveTag = (element) => {
+        if (mode === ESelectMode.SingleInput) {
+            setTimeout(() => {
+                if (tags.length < 1) addOption(element)
+            }, 0)
+            if (tags.length === 1) removeOption(element);
         }
         if (mode === ESelectMode.MultipleInput) {
-            addTagToArea(element);
+            if (!tags.includes(element)) addOption(element);
+            if (tags.includes(element)) removeOption(element);
         }
     }
 
     const removeTag = (index) => {
-        const poppedTag: string = tags[index];
-        if (mode === ESelectMode.SingleInput && tags.length === 1) {
-            setHiddenInput(true);
-        }
         setTags(tags.filter((tag, i) => i !== index));
-        if (activeOptions.includes(poppedTag)) {
-            setActiveOptions(activeOptions.filter((item) => item !== poppedTag));
-        }
+        setActiveOptions(activeOptions.filter((item, i) => i !== index));
     }
 
     return <form ref={areaRef}>
         <div className="Select">
-            <span className="TagContainer">
+            <div className="TagContainer">
                 <Tag onClickCross={removeTag} tags={tags}/>
-                {isHiddenInput && <input className="Input"
-                                         type="text"
-                                         onKeyDown={dataInput}
-                />}
-            </span>
+                <input className="Input"
+                       style={{width: !isShowInput ? 0 : '50%'}}
+                       type="text"
+                       disabled={!isShowInput}
+                       onKeyDown={dataInput}
+                />
+            </div>
             <div className={show ? "Search" : "Icon"} onClick={showOptions}></div>
         </div>
         {show &&
             <div className="ListOfOptions">
                 <Option activeOptions={activeOptions}
-                        onClick={addTag}
-                        options={
-                            options
-                        }/>
+                        onClick={addRemoveTag}
+                        options={options}
+                />
             </div>
         }
     </form>;
