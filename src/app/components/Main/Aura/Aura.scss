@@ -11,24 +11,25 @@
 
   .AuraContainer {
     @include flexible();
-    border: 1px solid $LightBlack;
-    border-radius: 6px;
-
-    .Yes {
-      border-right: 1px solid $LightBlack;
-    }
+    border-radius: 30px;
+    gap: 6px;
 
     .Yes, .No {
-      padding: 4px;
-      width: 40px;
-      height: 28px;
+      width: 46px;
+      height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 70px;
+      border: 1px solid $LightBlack;
+      background-color: transparent;
+      color: $Black;
+      cursor: pointer;
+    }
 
-      .Input {
-        display: none;
-      }
+    .Active {
+      background-color: #000000ab;
+      color: $White;
     }
   }
 }

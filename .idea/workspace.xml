@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="172c91c0-9355-4fe8-8998-56007232591a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Medicine/Medicine.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Select/Select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Select/Select.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Select/Select.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Tag/Tag.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Tag/Tag.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Tag/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Tag/Tag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Aura/Aura.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Aura/Aura.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Main/Aura/Aura.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Main/Aura/Aura.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +123,7 @@
       <workItem from="1709037369402" duration="57155000" />
       <workItem from="1709551378863" duration="73094000" />
       <workItem from="1710508772522" duration="48042000" />
-      <workItem from="1711354094696" duration="3037000" />
+      <workItem from="1711354094696" duration="12563000" />
     </task>
     <servers />
   </component>
